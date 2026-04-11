@@ -3,3 +3,11 @@ tensorflow==2.15.0
 numpy==1.26.4
 pandas
 scikit-learn
+matplotlib
+seaborn
+opencv-python
+ultralytics
+nltk
+wordcloud
+keras_preprocessing
+joblib
