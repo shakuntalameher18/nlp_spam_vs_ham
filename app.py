@@ -10,7 +10,7 @@ with open('tokenizer.pkl', 'rb') as f:
     tokenizer = pickle.load(f)
 
 # Load model
-model = keras.models.load_model('model.h5')
+model = keras.models.load_model("model.h5", compile=False)
 
 MAX_TEXT_LEN = 100
 
