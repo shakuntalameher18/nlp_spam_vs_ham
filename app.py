@@ -1,15 +1,15 @@
 import streamlit as st
 import pickle
 import numpy as np
-import keras
-from keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.models import load_model
+from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Load tokenizer
 with open('tokenizer.pkl', 'rb') as f:
     tokenizer = pickle.load(f)
 
 # Load model
-model = keras.models.load_model("model.keras")
+model = load_model("model.h5")
 
 MAX_TEXT_LEN = 100
 
